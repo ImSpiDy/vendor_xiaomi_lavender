@@ -6,7 +6,6 @@ soong_namespace {
 	imports: [
 		"vendor/xiaomi/sdm660-common",
 		"device/xiaomi/lavender",
-                "vendor/qcom/opensource/display",
                 "vendor/xiaomi/lavender",
 	],
 }
