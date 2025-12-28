@@ -972,7 +972,6 @@ PRODUCT_PACKAGES += \
     libgf_ca \
     libgf_hal \
     libgoodixhwfingerprint \
-    liboemcrypto \
     libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1 \
     vendor.qti.hardware.fingerprint@1.0 \
     dirac_resource \
