@@ -34,7 +34,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lavender/proprietary/vendor/etc/camera/lavender_s5k5e8_ofilm_cn_i_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lavender_s5k5e8_ofilm_cn_i_chromatix.xml \
     vendor/xiaomi/lavender/proprietary/vendor/etc/camera/lavender_s5k5e8_sunny_cn_ii_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lavender_s5k5e8_sunny_cn_ii_chromatix.xml \
     vendor/xiaomi/lavender/proprietary/vendor/etc/camera/lavender_s5kgm1_ofilm_i_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lavender_s5kgm1_ofilm_i_chromatix.xml \
+    vendor/xiaomi/lavender/proprietary/vendor/etc/camera/lavender_s5kgm1_ofilm_iii_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lavender_s5kgm1_ofilm_iii_chromatix.xml \
     vendor/xiaomi/lavender/proprietary/vendor/etc/camera/lavender_s5kgm1_ofilm_india_i_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lavender_s5kgm1_ofilm_india_i_chromatix.xml \
+    vendor/xiaomi/lavender/proprietary/vendor/etc/camera/lavender_s5kgm1_ofilm_india_iii_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lavender_s5kgm1_ofilm_india_iii_chromatix.xml \
     vendor/xiaomi/lavender/proprietary/vendor/etc/camera/lavender_s5kgm1_sunny_ii_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lavender_s5kgm1_sunny_ii_chromatix.xml \
     vendor/xiaomi/lavender/proprietary/vendor/etc/camera/lavender_s5kgm1_sunny_india_ii_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lavender_s5kgm1_sunny_india_ii_chromatix.xml \
     vendor/xiaomi/lavender/proprietary/vendor/etc/camera/lf_facerank_model.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lf_facerank_model.bin \
@@ -111,6 +113,7 @@ PRODUCT_PACKAGES += \
     libactuator_lavender_imx486_ofilm_i_dw9714 \
     libactuator_lavender_ov12a10_sunny_ii_dw9714 \
     libactuator_lavender_s5kgm1_ofilm_i_dw9800 \
+    libactuator_lavender_s5kgm1_ofilm_iii_dw9800 \
     libactuator_lavender_s5kgm1_sunny_ii_dw9800 \
     libarcsoft_dualcam_refocus \
     libarcsoft_high_dynamic_range \
@@ -683,6 +686,54 @@ PRODUCT_PACKAGES += \
     libchromatix_lavender_s5kgm1_ofilm_i_zsl_preview_3a_its \
     libchromatix_lavender_s5kgm1_ofilm_i_zsl_preview_3a_sn \
     libchromatix_lavender_s5kgm1_ofilm_i_zsl_video_3a \
+    libchromatix_lavender_s5kgm1_ofilm_iii_4k_preview_3a \
+    libchromatix_lavender_s5kgm1_ofilm_iii_4k_video_3a \
+    libchromatix_lavender_s5kgm1_ofilm_iii_bokeh_preview_3a \
+    libchromatix_lavender_s5kgm1_ofilm_iii_common \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_hfr_120 \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_hfr_60 \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_hfr_90 \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_liveshot \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_preview \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_preview_sn \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_preview_sr \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_preview_video \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_snapshot \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_snapshot_bokeh \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_snapshot_hdr \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_snapshot_hht \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_snapshot_sn \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_snapshot_sr \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_video \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_video_4k \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_video_weixin \
+    libchromatix_lavender_s5kgm1_ofilm_iii_cpp_video_weixin_res1 \
+    libchromatix_lavender_s5kgm1_ofilm_iii_default_preview_3a \
+    libchromatix_lavender_s5kgm1_ofilm_iii_default_video_3a \
+    libchromatix_lavender_s5kgm1_ofilm_iii_hfr_120 \
+    libchromatix_lavender_s5kgm1_ofilm_iii_hfr_120_3a \
+    libchromatix_lavender_s5kgm1_ofilm_iii_hfr_60 \
+    libchromatix_lavender_s5kgm1_ofilm_iii_hfr_60_3a \
+    libchromatix_lavender_s5kgm1_ofilm_iii_hfr_90 \
+    libchromatix_lavender_s5kgm1_ofilm_iii_hfr_90_3a \
+    libchromatix_lavender_s5kgm1_ofilm_iii_pano_preview_3a \
+    libchromatix_lavender_s5kgm1_ofilm_iii_postproc \
+    libchromatix_lavender_s5kgm1_ofilm_iii_preview \
+    libchromatix_lavender_s5kgm1_ofilm_iii_preview_cts \
+    libchromatix_lavender_s5kgm1_ofilm_iii_snapshot \
+    libchromatix_lavender_s5kgm1_ofilm_iii_snapshot_bokeh \
+    libchromatix_lavender_s5kgm1_ofilm_iii_snapshot_hdr \
+    libchromatix_lavender_s5kgm1_ofilm_iii_snapshot_sn \
+    libchromatix_lavender_s5kgm1_ofilm_iii_video \
+    libchromatix_lavender_s5kgm1_ofilm_iii_video_4k \
+    libchromatix_lavender_s5kgm1_ofilm_iii_video_weixin \
+    libchromatix_lavender_s5kgm1_ofilm_iii_video_weixin_res1 \
+    libchromatix_lavender_s5kgm1_ofilm_iii_weixin_video_3a \
+    libchromatix_lavender_s5kgm1_ofilm_iii_weixin_video_3a_res1 \
+    libchromatix_lavender_s5kgm1_ofilm_iii_zsl_preview_3a \
+    libchromatix_lavender_s5kgm1_ofilm_iii_zsl_preview_3a_its \
+    libchromatix_lavender_s5kgm1_ofilm_iii_zsl_preview_3a_sn \
+    libchromatix_lavender_s5kgm1_ofilm_iii_zsl_video_3a \
     libchromatix_lavender_s5kgm1_ofilm_india_i_4k_preview_3a \
     libchromatix_lavender_s5kgm1_ofilm_india_i_4k_video_3a \
     libchromatix_lavender_s5kgm1_ofilm_india_i_bokeh_preview_3a \
@@ -731,6 +782,54 @@ PRODUCT_PACKAGES += \
     libchromatix_lavender_s5kgm1_ofilm_india_i_zsl_preview_3a_its \
     libchromatix_lavender_s5kgm1_ofilm_india_i_zsl_preview_3a_sn \
     libchromatix_lavender_s5kgm1_ofilm_india_i_zsl_video_3a \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_4k_preview_3a \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_4k_video_3a \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_bokeh_preview_3a \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_common \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_hfr_120 \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_hfr_60 \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_hfr_90 \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_liveshot \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_preview \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_preview_sn \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_preview_sr \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_preview_video \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_snapshot \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_snapshot_bokeh \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_snapshot_hdr \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_snapshot_hht \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_snapshot_sn \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_snapshot_sr \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_video \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_video_4k \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_video_weixin \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_cpp_video_weixin_res1 \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_default_preview_3a \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_default_video_3a \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_hfr_120 \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_hfr_120_3a \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_hfr_60 \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_hfr_60_3a \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_hfr_90 \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_hfr_90_3a \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_pano_preview_3a \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_postproc \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_preview \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_preview_cts \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_snapshot \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_snapshot_bokeh \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_snapshot_hdr \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_snapshot_sn \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_video \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_video_4k \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_video_weixin \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_video_weixin_res1 \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_weixin_video_3a \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_weixin_video_3a_res1 \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_zsl_preview_3a \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_zsl_preview_3a_its \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_zsl_preview_3a_sn \
+    libchromatix_lavender_s5kgm1_ofilm_india_iii_zsl_video_3a \
     libchromatix_lavender_s5kgm1_sunny_ii_4k_preview_3a \
     libchromatix_lavender_s5kgm1_sunny_ii_4k_video_3a \
     libchromatix_lavender_s5kgm1_sunny_ii_bokeh_preview_3a \
@@ -933,8 +1032,10 @@ PRODUCT_PACKAGES += \
     libmmcamera_lavender_s5k5e8_sunny_ii \
     libmmcamera_lavender_s5k5e8_sunny_ii_eeprom \
     libmmcamera_lavender_s5kgm1_ofilm_i \
+    libmmcamera_lavender_s5kgm1_ofilm_iii \
     libmmcamera_lavender_s5kgm1_sunny_ii \
     libmmcamera_lavender_s5kgm1sp_ofilm_i_eeprom \
+    libmmcamera_lavender_s5kgm1sp_ofilm_iii_eeprom \
     libmmcamera_lavender_s5kgm1sp_sunny_ii_eeprom \
     libmmcamera_le2464c_eeprom \
     libmmcamera_le2464c_master_eeprom \
